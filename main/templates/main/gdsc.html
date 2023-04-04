@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML Code - NewsLetter Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'gdsc/gdsc.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+<div>
+  <section class="one">
+    <h1>STAND UP FOR YOUR RIGHTS</h1>
+    <p class="jk">we want you to know that you are not alone in being alone<p>
+      <p class="j">~ Stephen Fry</p>
+      <a role="button" class="btn btn-outline-warning ok" href="{% url 'distress' %}">Report Now</a>
+      <a role="button" class="btn btn-outline-warning ok" href="{% url 'signin' %}">Login</a>
+  </section>
+  
+  <section class="two">
+    <h3>PROBLEM STATEMENT</h3>
+    <h4>Domestic violence, human trafficking, and child abuse are pervasive issues that have serious consequences on individuals, families, and communities. These forms of violence are a violation of human rights and have devastating physical, emotional, and psychological effects on the victims. Despite various efforts to address these issues, they continue to persist in many parts of the world. There is a pressing need to identify the root causes of domestic violence, human trafficking, and child abuse and develop effective strategies involving peace and justice to prevent and address them.</h4>
+    <div class="dog">
+      <img src="{% static 'gdsc/gdc1.png' %}">
+  </div>
+  </section>
+  <section class="three">
+    <div class="you">
+      <img src="{% static 'gdsc/you.png' %}">
+  </div>
+  <div class="why">
+    <img src="{% static 'gdsc/why.png' %}" width = 1000>
+</div>
+    <p class="e">Women and men in one year are physically abused by an intimate partner in the United States.</p>
+    <p class="g">Abuses are persons known to the child or in a position of trust and responsibility.</p>
+    <p class="i">People are exploited annually for human trafficking.</p>
+  </section>
+  <section class="four">
+    <div class="g_d">
+      <img src="{% static 'gdsc/first.png' %}">
+  </div>
+    <p id="ab">" There are still people in our society who cannot believe that a husband can rape his wife. There have been nights where I have been slapped and beaten up because I refused to have sex. "</p>
+    <div class="g_dd">
+      <img src="{% static 'gdsc/second.png' %}">
+  </div>
+    <p id="b">" She was 14 when her private tutor allegedly sexually assaulted her. He told her that it was her shame, that she was a bad girl, and that no one would believe her. She kept quiet. </p>
+    <div class="g_dg">
+      <img src="{% static 'gdsc/third.png' %}">
+  </div>
+    <p id="c">" What I went through, I would not want any other girl or woman to go through. I suffered a lot. It was a very, very tough time. In the morning, there would be 12-14 men, and in the night, around 15-16 men. "</p>
+  </section>
+  <section class="five">
+    <div class="cat">
+      <img src="{% static 'gdsc/bulb.png' %}">
+    </div>
+    <h5 id="key">Our Solution</h5>
+    <p id="jj"><span>1.The user can report the case in just a single click.They will be asked to fill a few basic details along with a valid proof of the act of violence.</span<span> 2.given proof will be stored in our database system. At the same time the concerned authorities will be receiving a notification on their respective portal.</span><span>3.And that's it. The user will be connected to the nearest police station in just a matter of sometime. </span></p>
+  </section>
+</div>
+  
+  </main>
+</body>
+
+</html>

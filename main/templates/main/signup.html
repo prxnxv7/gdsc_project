@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .form-signup {
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-signup-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #2f2f2f;
+        }
+
+        .form-control:focus {
+            border-color: #3a80ce;
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #3a80ce;
+            border-color: #3a80ce;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #3064a1;
+            border-color: #3064a1;
+        }
+
+        .checkbox label {
+            font-weight: normal;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <form class="form-signup" method="post" action="{% url 'signin' %}">
+        {% csrf_token %}
+        <h1 class="form-signup-heading mb-4">Sign Up</h1>
+
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="text" id="inputName" class="form-control mb-3" placeholder="Name" required autofocus>
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required>
+
+        <label for="inputConfirmPassword" class="sr-only">Confirm Password</label>
+        <input type="password" id="inputConfirmPassword" class="form-control mb-3" placeholder="Confirm Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+
+        <hr>
+
+        <p class="text-center mb-0">Already have an account? <a href="{% url 'signin' %}">Sign in</a></p>
+    </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

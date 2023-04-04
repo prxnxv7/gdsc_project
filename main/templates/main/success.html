@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrimeEye</title>
+    <style>
+        h1{
+            font-size: 30px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    {% extends "main/base.html" %}
+    {% block content %}
+    <h1>Your report has been submitted successfully</h1>
+    {% csrf_token %}
+    <a href="{% url 'distress' %}">Report new</a>
+    {% endblock %}
+</body>
+</html>
